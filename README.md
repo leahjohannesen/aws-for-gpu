@@ -25,14 +25,25 @@ sudo apt-get install -y linux-image-extra-`uname -r` linux-headers-`uname -r` li
 
 sudo apt-get install -y cuda
 sudo apt-get clean
-
-export PATH=/usr/local/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-
 ```
 Check that it recognizes the GPU with nvidia-smi
 
 ###Install anaconda package w/ keras/theano (then update theano to bleeding edge)
+
+###Add the cuda path file to your $PATH
+```
+vim .bashrc
+```
+Add the following to the bottom of the file
+If you installed anaconda correctly, you should see a similar line for anaconda
+```
+export PATH="/usr/local/cuda/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+```
+Run the following to execute the new .bashrc
+```
+source .bashrc
+```
 
 ###Change the theano config file
 ```
