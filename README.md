@@ -26,9 +26,13 @@ sudo apt-get install -y linux-image-extra-`uname -r` linux-headers-`uname -r` li
 sudo apt-get install -y cuda
 sudo apt-get clean
 ```
-Check that it recognizes the GPU with nvidia-smi
 
-###Install anaconda package w/ keras/theano (then update theano to bleeding edge)
+Verify your instance now recognizes your GPUs with the following:
+```
+nvidia-smi
+```
+
+###Install Anaconda, Keras and upgrade Theano to bleeding edge
 
 ###Add the cuda path file to your $PATH
 ```
@@ -59,7 +63,12 @@ allow_gc = False
 [lib]
 cnmem=.95
 ```
+
+This will change the default parameters of calling Theano to autorun of the GPU.
+
 ###Check Installation
 
 Open ipython and import theano to check. You should see something like:
 "Using gpu device 0: GRID K520 (CNMeM is enabled with initial size: 95.0% of memory, cuDNN not available)"
+
+You can now call scripts like normal, and it will default to the GPU if using Theano.
