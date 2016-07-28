@@ -1,8 +1,14 @@
 # AWSforGPU
 
+AMI Instance:
+GPUwithKeras
+ami-3befa95b
+
 ##Steps for creating ubuntu/keras enabled instance of AWS.
 
 ###Create ubuntu instance of AWS, with volume size of 20GB+
+
+###SSH into the ubuntu instance and run all the following code
 
 ###Run the following (credit: https://github.com/BVLC/caffe/wiki/Caffe-on-EC2-Ubuntu-14.04-Cuda-7)
 
