@@ -64,7 +64,6 @@ Add the following code and save/quit (credit: http://machinelearningmastery.com/
 [global]
 device = gpu
 floatX = float32
-allow_gc = False
  
 [lib]
 cnmem=.95
