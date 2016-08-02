@@ -77,3 +77,5 @@ Open ipython and import theano to check. You should see something like:
 "Using gpu device 0: GRID K520 (CNMeM is enabled with initial size: 95.0% of memory, cuDNN not available)"
 
 You can now call scripts like normal, and it will default to the GPU if using Theano.
+
+You'll also want to install the cuDNN package from nVidia. Will add instructions soon.
