@@ -3,4 +3,4 @@
 This repo just covers instructions for getting an aws server up and running with GPU enabled Tensorflow/Keras for deep learning. <br>
 
 While the specific links may be out of date, the process should work. <br>
-There's a quick caveat that the Tensorflow one is more current than the Keras one, and the CUDA/cuDNN instruction guides are probably more up to date.
+Quick caveat, the Keras one is older when I first started on this grand adventure and might a be a little off on the configuration. The Tensorflow has a much better guide for installing the CUDA/cuDNN.
